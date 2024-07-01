@@ -1,0 +1,40 @@
+main{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    padding: 1em;
+}
+
+li {
+    list-style-type: none;
+}
+
+#me {
+    display: flex;
+    justify-content: space-between;
+}
+
+#me img{
+    padding-left: 2em;
+}
+
+#projects {
+    padding: 0;
+}
+
+#projects li {
+    padding: 0.5em 0;
+}
