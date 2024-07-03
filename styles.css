@@ -1,17 +1,35 @@
-main{
-    display: flex;
-    flex-flow: column nowrap;
+body {
+    width: 75%;
+    margin: 0 auto;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 4fr 4fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    justify-items: start;
     align-items: center;
 }
 
+
 header {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
 }
 
-nav ul {
+header h1{
+    justify-self: center;
+    align-self: center;
+}
+
+nav {
+    justify-self: start;
+    align-self: center;
+}
+
+nav ul{
     display: flex;
-    justify-content: space-around;
 }
 
 nav ul li {
@@ -23,18 +41,35 @@ li {
 }
 
 #me {
-    display: flex;
-    justify-content: space-between;
+    justify-self: center;
 }
 
-#me img{
-    padding-left: 2em;
+.img-container {
+    width: 50%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 #projects {
+    grid-column: 1 / span2;
+    justify-self: center;
+}
+
+#projects ul {
     padding: 0;
 }
 
-#projects li {
+#projects ul li {
     padding: 0.5em 0;
+}
+
+#skills {
+    justify-self: center;
+    grid-column: 1 / span2;
 }
