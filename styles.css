@@ -18,9 +18,11 @@ main {
     align-items: center;
     background-color: #fefbe9;
     border-radius: 1em;
+    border: 1px solid rgb(75, 38, 38);
 }
 
 header {
+    margin-top: 1%;
     height: 7%;
     display: grid;
     grid-template-rows: 1fr;
@@ -29,6 +31,7 @@ header {
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
     background-color: #fefbe9;
+    border: 1px solid rgb(75, 38, 38);
 }
 
 header h1{
