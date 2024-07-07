@@ -38,6 +38,24 @@ body {
     }
 }
 
+@media only screen and (max-width: 768px){
+    #outer-smartphone-sides{
+        height: 70rem;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    #outer-smartphone-sides{
+        height: 53rem;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    #outer-smartphone-sides{
+        height: 44rem;
+    }   
+}
+
 #on-off-button {
     width: 3rem;
     height: 3rem;
@@ -53,6 +71,22 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: rgb(75, 38, 38);
+}
+
+@media only screen and (max-width: 425px){
+    #on-off-button {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    #on-off-button {
+        width: 2rem;
+        height: 2rem;
+        font-size: 14px;
+    }
 }
 
 #on-off-button:hover {
@@ -90,7 +124,24 @@ body {
     #inner-smartphone-sides{
         height: 71rem;
     }
-    
+}
+
+@media only screen and (max-width: 768px){
+    #inner-smartphone-sides{
+        height: 60rem;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    #inner-smartphone-sides{
+        height: 45rem;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    #inner-smartphone-sides{
+        height: 36rem;
+    }
 }
 
 /*Header*/
@@ -271,6 +322,24 @@ main {
     main{
         width: 85%;
         column-gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    main{
+        height: 50rem;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    main{
+        height: 37rem;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    main{
+        height: 28rem;
     }
 }
 
