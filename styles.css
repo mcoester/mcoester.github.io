@@ -44,9 +44,9 @@ body {
     }
 }
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 480px){
     #outer-smartphone-sides{
-        height: 53rem;
+        height: 45rem;
     }
 }
 
@@ -55,6 +55,8 @@ body {
         height: 44rem;
     }   
 }
+
+
 
 #on-off-button {
     width: 3rem;
@@ -73,7 +75,7 @@ body {
     color: rgb(75, 38, 38);
 }
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 480px){
     #on-off-button {
         width: 2.5rem;
         height: 2.5rem;
@@ -132,9 +134,9 @@ body {
     }
 }
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 480px){
     #inner-smartphone-sides{
-        height: 45rem;
+        height: 39rem;
     }
 }
 
@@ -331,9 +333,10 @@ main {
     }
 }
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 480px){
     main{
-        height: 37rem;
+        height: 31rem;
+        row-gap: 5em;
     }
 }
 
