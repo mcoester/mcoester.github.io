@@ -492,6 +492,7 @@ h2 {
 @media only screen and (max-width: 480px){
     .tab:hover{
         font-size: 12px;
+        font-weight: normal;
     }
 }
 
@@ -528,6 +529,12 @@ h2 {
 @media only screen and (max-width: 530px){
     .tab::after {
         right: 3px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .tab::after {
+        top: 10px;
     }
 }
 
