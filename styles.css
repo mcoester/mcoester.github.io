@@ -469,11 +469,6 @@ h2 {
     }
 }
 
-@media only screen and (max-width: 425px){
-    #projects .list-element .tab {
-        font-size: 14px;
-    }
-}
 
 @media only screen and (max-width: 425px){
     #projects .list-element .tab {
@@ -492,6 +487,12 @@ h2 {
     background-color: hsl(51, 91%, 90%);
     font-weight: bolder;
     font-size: 18px;
+}
+
+@media only screen and (max-width: 425px){
+    .tab:hover{
+        font-size: 12px;
+    }
 }
 
 .tab::after {
