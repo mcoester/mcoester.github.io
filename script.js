@@ -1,3 +1,4 @@
+//tab-function
 let projectTabs = document.getElementsByClassName('tab');
 
 const useTab = (event) =>{
@@ -15,4 +16,24 @@ for(let index = 0; index < projectTabs.length; index++){
     projectTabs[index].addEventListener('click', useTab);
 }
 
+//change-color-function
 
+const background = document.getElementById('button-background');
+const circle = document.getElementById('button-circle');
+let bool = true;
+
+const switchColor = () =>{
+    let backgroundWidth = getComputedStyle(background).width;
+    let circleWidth = getComputedStyle(circle).width;
+
+    if(bool){
+        circle.style.right = circleWidth;
+        bool = false;
+    } else{
+        circle.style.right = backgroundWidth;
+        bool = true;
+    }
+}
+
+background.addEventListener('click', switchColor);
+circle.addEventListener('click', switchColor);
