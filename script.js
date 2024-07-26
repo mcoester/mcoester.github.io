@@ -38,11 +38,12 @@ const switchColor = () =>{
     let tab = document.getElementsByClassName('tab');
     let listElement = document.getElementsByClassName('list-element');
     let skills = document.getElementById('skills');
-
+    let stylesheet = document.styleSheets[0];
+    let rules = stylesheet.cssRules;
 
     if(bool){
         circle.style.right = circleWidth;
-        body.style.backgroundColor = 'hsl(0, 0%, 25%)';
+        body.style.backgroundColor = 'hsla(203, 94%, 19%, 1)';
         body.style.color = 'hsl(51, 91%, 95%)';
        // console.log(getComputedStyle(body).backgroundColor);
        
@@ -65,7 +66,21 @@ const switchColor = () =>{
         /*for(let index= 0; index < tab.length; index++){
             tab[index].children[0].style.backgroundColor = 'hsl(203, 83%, 40%, 1)';
         }*/
-        //'hsl(203, 83%, 40%, 1)';
+       for(let index = 0; index < rules.length; index++){
+        if(rules[index].selectorText === '.tab:hover'){
+            rules[index].style.backgroundColor = 'hsl(203, 83%, 40%, 1)';
+            break;
+        }
+       }
+       for(let index = 0; index < rules.length; index++){
+        if(rules[index].selectorText === '.tab::after'){
+            rules[index].style.borderTopColor = 'hsl(51, 91%, 95%)';
+            break;
+        }
+       }
+        //color: yellow im dark-mode
+        //hover-blue:'hsl(203, 83%, 40%, 1)';
+
         skills.style.backgroundColor = 'hsla(203, 94%, 19%, 1)';
         skills.style.border = 'solid 1px hsl(51, 91%, 95%)';
         bool = false;
@@ -87,6 +102,18 @@ const switchColor = () =>{
         for(let index= 0; index < listElement.length; index++){
             listElement[index].style.borderColor = 'black';
         }
+        for(let index = 0; index < rules.length; index++){
+            if(rules[index].selectorText === '.tab:hover'){
+                rules[index].style.backgroundColor = 'hsl(51, 91%, 90%)';
+                break;
+            }
+        }
+        for(let index = 0; index < rules.length; index++){
+            if(rules[index].selectorText === '.tab::after'){
+                rules[index].style.borderTopColor = '#3B7D45';
+                break;
+            }
+           }
         skills.style.backgroundColor = 'hsla(51, 91%, 95%)';
         skills.style.border = 'none';
 
