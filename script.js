@@ -138,3 +138,20 @@ const sizeChange = () => {
 }
 
 window.addEventListener('resize', sizeChange);
+
+const onOffButton = document.getElementById('on-off-button');
+const screen = document.getElementById('on-off-screen');
+screen.style.backgroundColor = 'transparent';
+screen.style.zIndex = '2';
+
+const offOn = () =>{
+    if(screen.style.backgroundColor === 'transparent'){
+        screen.style.backgroundColor = 'hsl(0, 4%, 28%)';
+        console.log('Farbe wurde geändert');
+    } else{
+        screen.style.backgroundColor = 'transparent';
+        console.log('Ich sollte eigentlich transparent werden!');
+    }
+}
+
+onOffButton.addEventListener('click', offOn);
