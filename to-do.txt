@@ -1,7 +1,7 @@
--   Farbe des Off-Screens verändern
+-   Farbe des Off-Screens verändern -
 -   Text zum Off-Screen hinzufügen
 -   Text des On-Off-Button löschen und durch Farben (Rot/Grün) erkenntlich machen
--   Farbe des Ipads im Dark-Mode ändern
+-   Farbe des Ipads im Dark-Mode ändern - 
 -   Seitenabstände der Inhalte bearbeiten
 -   main-Elemente für kleinere Geräte übersichtlicher anordnen
 -   Hintergrundbilder raussuchen

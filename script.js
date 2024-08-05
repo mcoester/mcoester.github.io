@@ -148,12 +148,29 @@ const main = document.querySelector('main');
 screen.style.backgroundColor = 'transparent';
 
 const offOn = () =>{
+    const firstParagraph = document.createElement('p');
+    firstParagraph.innerHTML = 'Michael Cöster';
+    firstParagraph.id = 'name';
+    const secondParagraph = document.createElement('p');
+    secondParagraph.id = 'profession';
+    secondParagraph.innerHTML = 'Frontend-Developer';
     if(screen.style.backgroundColor === 'transparent'){
         screen.style.backgroundColor = 'hsl(237, 17%, 24%)';
         screen.removeChild(header);
         screen.removeChild(main);
+        screen.style.display = 'flex';
+        screen.style.flexDirection = 'column';
+        screen.style.justifyContent = 'center';
+        screen.style.alignItems = 'center';
+        screen.appendChild(firstParagraph);
+        screen.appendChild(secondParagraph);
     } else{
         screen.style.backgroundColor = 'transparent';
+        const firstParagraph = document.getElementById('name');
+        const secondParagraph = document.getElementById('profession');
+        screen.removeChild(firstParagraph);
+        screen.removeChild(secondParagraph);
+        screen.style.display = 'block';
         screen.appendChild(header);
         screen.appendChild(main);
     }
