@@ -47,8 +47,9 @@ const switchColor = () =>{
         body.style.color = 'hsl(51, 91%, 95%)';
        // console.log(getComputedStyle(body).backgroundColor);
        
-        ipadSides.style.backgroundColor = 'hsla(0, 5%, 66%, 1)';
+        ipadSides.style.backgroundColor = 'hsla(0, 0%, 62%, 1)';
         main.style.backgroundColor = 'hsla(0, 5%, 45%, 1)';
+        main.style.borderColor = 'hsl(51, 91%, 95%)';
         header.style.backgroundColor = 'hsla(203, 94%, 19%, 1)';
         header.style.borderColor = 'hsl(51, 91%, 95%)'
         //Schleife um Farbe von links zu verändern
@@ -89,7 +90,8 @@ const switchColor = () =>{
         body.style.backgroundColor = 'hsl(106, 33%, 90%, 1)';
         body.style.color = '#3B7D45';
         main.style.backgroundColor = 'hsla(106, 33%, 90%, 1)';
-        ipadSides.style.backgroundColor = 'hsla(0, 2%, 33%, 0.53)';
+        main.style.borderColor = 'black';
+        ipadSides.style.backgroundColor = 'hsla(0, 0%, 62%, 1)';
         header.style.backgroundColor = 'hsla(51, 91%, 95%)';
         header.style.borderColor = 'black';
         for(let index = 0; index < links.length; index++){
@@ -147,7 +149,7 @@ screen.style.backgroundColor = 'transparent';
 
 const offOn = () =>{
     if(screen.style.backgroundColor === 'transparent'){
-        screen.style.backgroundColor = 'hsl(0, 4%, 28%)';
+        screen.style.backgroundColor = 'hsl(237, 17%, 24%)';
         screen.removeChild(header);
         screen.removeChild(main);
     } else{
