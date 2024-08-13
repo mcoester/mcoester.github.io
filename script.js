@@ -1,3 +1,5 @@
+import { floatIn } from "./animation.js";
+
 //tab-function
 let projectTabs = document.getElementsByClassName('tab');
 
@@ -151,9 +153,15 @@ const offOn = () =>{
     const firstParagraph = document.createElement('p');
     firstParagraph.innerHTML = 'Michael Cöster';
     firstParagraph.id = 'name';
+    firstParagraph.style.fontSize = '27px';
+    firstParagraph.style.color = 'hsl(51, 91%, 95%)';
+    firstParagraph.style.padding = '0.5rem 0';
     const secondParagraph = document.createElement('p');
     secondParagraph.id = 'profession';
     secondParagraph.innerHTML = 'Frontend-Developer';
+    secondParagraph.style.fontSize = '27px';
+    secondParagraph.style.color = 'hsl(51, 91%, 95%)';
+    secondParagraph.style.padding = '0.5rem 0';
     if(screen.style.backgroundColor === 'transparent'){
         screen.style.backgroundColor = 'hsl(237, 17%, 24%)';
         screen.removeChild(header);
@@ -163,7 +171,11 @@ const offOn = () =>{
         screen.style.justifyContent = 'center';
         screen.style.alignItems = 'center';
         screen.appendChild(firstParagraph);
-        screen.appendChild(secondParagraph);
+        floatIn(screen, firstParagraph);
+        setTimeout(() =>{
+            screen.appendChild(secondParagraph);
+            floatIn(screen, secondParagraph);
+        }, 1000);
     } else{
         screen.style.backgroundColor = 'transparent';
         const firstParagraph = document.getElementById('name');
